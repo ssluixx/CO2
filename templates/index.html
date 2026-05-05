@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 monitorings</title>
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #eef2f3;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .wrapper {
+            background: #ffffff;
+            display: inline-block;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: block;
+            width: 250px;
+            margin: 10px auto;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #1e7e34;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>CO2 līmeņa sistēma</h1>
+        <p>Izvēlieties, ko vēlaties apskatīt:</p>
+
+        <a href="/day">
+            <button class="btn">Pārbaudīt konkrētu dienu</button>
+        </a>
+
+        <a href="/chart">
+            <button class="btn">Apskatīt pilnu grafiku</button>
+        </a>
+
+        <footer>
+            Datu analīzes rīks skolai
+        </footer>
+    </div>
+
+</body>
+
+</html>

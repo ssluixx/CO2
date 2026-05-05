@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 grafiks</title>
+
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f6f7;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .container {
+            background: white;
+            display: inline-block;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 85%;
+            max-width: 900px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 10px 18px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2e86c1;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #21618c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>CO2 koncentrācijas grafiks</h2>
+
+        <img src="data:image/png;base64,{{ chart }}" alt="CO2 graph">
+
+        <br>
+        <a href="/">
+            <button class="btn">Atpakaļ uz sākumu</button>
+        </a>
+    </div>
+
+</body>
+
+</html>
